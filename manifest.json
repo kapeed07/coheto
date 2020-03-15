@@ -1,0 +1,16 @@
+{
+  "name": "CoHeTo",
+  "description": "Codepen Header Toggle",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://codepen.io/pen/*"],
+    "js": ["main.js"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
